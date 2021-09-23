@@ -1,0 +1,28 @@
+.product{
+    display: flex;
+    /* border: 1px solid #000; */
+    padding: 20px;
+    margin: 25px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px darkgray;
+}
+
+.info-area{
+    margin-left: 25px;
+}
+
+.name{
+    color: blue;
+    font-weight: 400;
+}
+
+.addBtn{
+    background-color: #F0C14B;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 5px;
+}
+
+.rating-icon{
+    color: gold;
+}
