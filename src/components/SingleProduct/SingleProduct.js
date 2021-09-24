@@ -16,6 +16,7 @@ const SingleProduct = (props) => {
                 <h3 className="name">{name}</h3>
                 <p>By: {seller}</p>
                 <Rating
+                    readonly
                     initialRating={star}
                     emptySymbol="far fa-star rating-icon"
                     fullSymbol="fas fa-star rating-icon"

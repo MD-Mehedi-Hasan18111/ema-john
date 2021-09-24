@@ -21,6 +21,7 @@
     border: none;
     padding: 8px 40px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .rating-icon{
