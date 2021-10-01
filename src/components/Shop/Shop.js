@@ -39,7 +39,17 @@ const Shop = () => {
     }, [products])
 
     const orderProduct = (product) => {
-        const newCart = [...cart, product];
+        const existingProduct = cart.find(pd => pd.key === product.key);
+        let newCart = [];
+        if (existingProduct) {
+            const remainingProducts = cart.filter(pd => pd.key !== existingProduct.key);
+            existingProduct.quantity += 1;
+            newCart = [...remainingProducts, existingProduct];
+        }
+        else {
+            product.quantity = 1;
+            newCart = [...cart, product];
+        }
         setCart(newCart);
         addToDb(product.key);
     }
@@ -53,7 +63,7 @@ const Shop = () => {
 
     return (
         <div>
-            <div className="search-area">
+            <div className="search-area" style={{ display: "sticky" }}>
                 <input onChange={searchProduct} className="input" type="text" placeholder="Search product..." />
             </div>
             <div className="shop-container">
