@@ -56,9 +56,6 @@ const Cart = (props) => {
                     <p style={{ paddingLeft: "115px" }}>$ {total.toFixed(2)}</p>
                 </div>
             </div>
-            <div style={{ textAlign: "center" }}>
-                <button className="reviewBtn">Review Your Order</button>
-            </div>
         </div>
     );
 };

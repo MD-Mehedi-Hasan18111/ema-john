@@ -3,6 +3,7 @@ import './Shop.css';
 import SingleProduct from '../SingleProduct/SingleProduct';
 import Cart from '../Cart/Cart';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
 
@@ -63,6 +64,11 @@ const Shop = () => {
                 </div>
                 <div className="cart-container">
                     <Cart cart={cart} />
+                    <div style={{ textAlign: "center" }}>
+                        <Link to='/order'>
+                            <button className="reviewBtn">Review Your Order</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
