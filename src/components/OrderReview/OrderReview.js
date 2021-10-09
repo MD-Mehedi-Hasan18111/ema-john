@@ -22,9 +22,9 @@ const OrderReview = () => {
 
     const placeOrder = () => {
         if (cart.length > 0) {
-            setCart([]);
-            clearTheCart();
-            history.push('/placeorder');
+            // setCart([]);
+            // clearTheCart();
+            history.push('/shipping');
         }
         else {
             alert("Cart have empty!");
@@ -41,7 +41,7 @@ const OrderReview = () => {
             <div className="cart-container">
                 <Cart cart={cart} />
                 <div style={{ textAlign: "center" }}>
-                    <button onClick={placeOrder} className="reviewBtn">Place Order</button>
+                    <button onClick={placeOrder} className="reviewBtn">Proceed to Checkout</button>
                 </div>
             </div>
         </div>
