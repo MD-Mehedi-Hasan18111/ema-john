@@ -20,7 +20,7 @@ const OrderReview = () => {
 
     const history = useHistory();
 
-    const placeOrder = () => {
+    const shipping = () => {
         if (cart.length > 0) {
             // setCart([]);
             // clearTheCart();
@@ -41,7 +41,7 @@ const OrderReview = () => {
             <div className="cart-container">
                 <Cart cart={cart} />
                 <div style={{ textAlign: "center" }}>
-                    <button onClick={placeOrder} className="reviewBtn">Proceed to Checkout</button>
+                    <button onClick={shipping} className="reviewBtn">Proceed to Checkout</button>
                 </div>
             </div>
         </div>
