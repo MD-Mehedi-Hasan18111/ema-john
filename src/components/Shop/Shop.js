@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 
 const Shop = () => {
 
+    document.title = "e-jhon/shop";
+
     const [products, setProducts] = useState([]);
 
     const [cart, setCart] = useState([]);

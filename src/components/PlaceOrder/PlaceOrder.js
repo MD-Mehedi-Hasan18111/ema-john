@@ -2,6 +2,7 @@ import React from 'react';
 import placeOrderImg from '../../images/giphy.gif';
 
 const PlaceOrder = () => {
+
     return (
         <div style={{ textAlign: "center" }}>
             <h1>Order Has Been Successful!</h1>

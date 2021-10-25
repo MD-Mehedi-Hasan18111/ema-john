@@ -15,6 +15,7 @@ const useFirebase = () => {
 
     const logOut = () => {
         signOut(auth).then(result => {
+            console.log(result);
             setUser({});
         })
             .catch(error => {
@@ -26,6 +27,9 @@ const useFirebase = () => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
+            }
+            else {
+                setUser({});
             }
         })
     }, [])

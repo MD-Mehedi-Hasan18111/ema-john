@@ -8,6 +8,8 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 
 const OrderReview = () => {
 
+    document.title = "/e-jhon/order review"
+
     const [products, setProducts] = useProduct();
     const [cart, setCart] = useCart(products);
 

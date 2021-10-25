@@ -4,7 +4,7 @@ const firebaseConfig = {
     projectId: "user-registration-system-7334f",
     storageBucket: "user-registration-system-7334f.appspot.com",
     messagingSenderId: "944603987160",
-    appId: "1:944603987160:web:b1c90e1654b4efebe6ebad"
+    appId: "1:944603987160:web:c718cb333b6b2a26e6ebad"
 };
 
 export default firebaseConfig;
